@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+header.header{
+
+    width: 80%;
+    font-size: 0;
+    margin: 0 auto;
+
+}
+
+header.header div.logo a.logo img{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 50px;
+    width: 80%;
+
+}
+
+header.header div.logo, header.header nav.nav, header.header nav.nav ul, header.header nav.nav ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+header.header  nav.nav ul{
+    margin-left: 100px;
+}
+
+header.header  nav.nav ul li a{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    vertical-align: bottom;    
+    margin-left: 20px;
+}
+
+header.header  nav.nav ul li a:hover{
+    padding: 0px 5px 0px 10px;
+    color: #78552B;
+    }

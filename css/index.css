@@ -1,0 +1,113 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+*{
+    margin: 0;
+
+}
+
+div.banner a.banner img{
+    width: 100%;
+    height: 420px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+div.main_container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    font-size: 0;
+}
+
+h3{
+    margin-left: 20px;
+}
+
+div.img{
+    display: inline-block;
+}
+
+div.img img{
+    display: inline-block;
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.introduce_photo, div.introduce{
+    display: inline-block;
+}
+
+div.introduce_photo img{
+    display: inline-block;
+    /* border: 1px solid red; */
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 30px 10px 50px;
+    border-radius: 2px;
+}
+
+div.introduce{
+    display: inline-block;
+    font-size: 1rem;
+    width: 450px;
+    height: 150px;
+    color: #F9BF45;
+    vertical-align: middle;
+}
+
+div.pro_info a img{
+    margin-left: 20px;
+    width: 230px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.booking, button{
+    font-size: 1rem;
+    margin-left: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.item_block button{
+    margin-left: 100px;
+    border: transparent;
+    color: white;
+    background-color: #F9BF45;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3.photo{
+    margin-top: 10px;
+}
+
+div.news{
+    display: inline-block;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+div.news div.news_1{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid #78552B;
+    width: 45%;
+    margin: 10px 10px 10px 30px;
+    padding: 3px;
+}
+
+div.news div.news_1 p{
+    font-size: 1rem;
+}

@@ -1,0 +1,76 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+
+/* 麵包屑 */
+nav.my_breadcrumb ol.breadcrumb{
+    background-color: #1C1C1C;
+    width: 80%;
+    margin: 0 auto 10px;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item > a{
+    color: white;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item.active{
+    color: #F9BF45;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
+    content: ">";
+    color: white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+}
+
+dl, dt{
+    list-style: none;
+    list-style-position: outside;
+}
+
+dl{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+div.menu_items dl{
+    /* border: 1px solid black; */
+    display: inline-block;
+    width: 270px;
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 100px;
+    vertical-align: top;
+
+}
+
+div.menu_items dt{
+    display: block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+div.menu_items dt img{
+    /* border: 1px solid red; */
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border: 0;
+}
+

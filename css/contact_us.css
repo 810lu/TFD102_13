@@ -1,0 +1,91 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+
+*{
+    margin: 0;
+}
+
+nav.my_breadcrumb ol.breadcrumb{
+    background-color: #1C1C1C;
+    width: 80%;
+    margin: 0 auto 10px;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item > a{
+    color: white;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item.active{
+    color: #F9BF45;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
+    content: ">";
+    color: white;
+}
+
+h3{
+    margin-left: 270px;
+}
+
+
+div.qa{
+    margin-left: 270px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 60%;
+}
+
+
+.Question{
+    width: 100%;
+    border-bottom: 1px #aaa dotted;
+    }
+.Question:hover::before {
+    width: 98%;
+    padding: 0px 5px 0px 10px;
+    color: #78552B;
+    content:'➤';
+    }
+.Answer{
+    display: none;
+    width: 98%;
+    padding: 0px 10px 10px 10px;
+    border-bottom: 1px #aaa dotted;
+    color: #78552B;
+    }
+.Answer p{
+    padding: 0px 10px 10px 10px;
+    }
+
+
+form.the_form{
+    /* border: 1px solid black ; */
+    width: 60%;
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+div.radio_block{
+    display: inline-block;
+}
+
+div.block{
+    display: flex;
+}
+
+textarea.notes{
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+}
+div.item_block button{
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+
+div.item_block, div.block{
+    margin-top: 10px;
+}

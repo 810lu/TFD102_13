@@ -1,0 +1,99 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+*{
+    margin: 0;
+}
+
+nav.my_breadcrumb ol.breadcrumb{
+    background-color: #1C1C1C;
+    width: 80%;
+    margin: 0 auto 10px;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item > a{
+    color: white;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item.active{
+    color: #F9BF45;
+}
+  
+nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
+    content: ">";
+    color: white;
+}
+
+div.main_container{
+    display: inline-block;
+}
+
+div.main_container div.intro div.photo, div.main_container div.intro div.photo img{
+    display: inline-block;
+    width: 450px;
+    height: 300px;
+    object-fit: contain;
+}
+
+div.main_container div.intro div.info {
+    display: inline-block;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 300px;
+    vertical-align: middle;
+    padding-top: 80px;
+    margin-left: 180px;
+}
+
+div.main_container div.intro div.photo img:first-child{
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+
+div.main_container div.intro div.photo:last-child img{
+    margin-left: 0px;
+}
+
+h3{
+	text-align: center;
+}
+
+h3.title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+div.four_grid{
+    display: inline-block;
+}
+
+div.four_grid div.info{
+    display: inline-block;
+    align-items: center;
+}
+
+div.four_grid div.info h4{
+    text-align: center;
+}
+
+div.four_grid div.info:nth-child(1) p, div.four_grid div.info:nth-child(4) p{
+    text-align: center;
+}
+
+div.four_grid div.info p{
+    width: 350px;
+    height: 100px;
+}
+
+div.four_grid div.info img{
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+div.four_grid div.info:first-child, div.four_grid div.info:nth-child(3){
+    margin-left: 300px;
+}
