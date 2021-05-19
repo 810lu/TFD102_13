@@ -108,6 +108,8 @@ div.news div.news_1{
     padding: 3px;
 }
 
-div.news div.news_1 p{
+div.news div.news_1 a{
     font-size: 1rem;
+    text-decoration: none;
+    color: black;
 }
