@@ -25,29 +25,40 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
+div.main{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    margin: 50px auto;
+    max-width: 1400px;
+}
+
 h3{
-    margin-left: 270px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 
 div.qa{
-    margin-left: 270px;
+    /* margin-left: 270px; */
     box-sizing: border-box;
     /* border: 1px solid black; */
-    width: 60%;
+    padding: 20px 20%;
 }
 
 
 .Question{
     width: 100%;
     border-bottom: 1px #aaa dotted;
+    padding: 30px auto;
     }
+
 .Question:hover::before {
     width: 98%;
     padding: 0px 5px 0px 10px;
     color: #78552B;
     content:'➤';
     }
+
 .Answer{
     display: none;
     width: 98%;
@@ -55,16 +66,18 @@ div.qa{
     border-bottom: 1px #aaa dotted;
     color: #78552B;
     }
+
 .Answer p{
     padding: 0px 10px 10px 10px;
     }
 
 
 form.the_form{
-    /* border: 1px solid black ; */
-    width: 60%;
-    margin-left: 270px;
-    margin-top: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    margin: 30px 10%;
+    padding-left: 25%;
+
 }
 
 div.radio_block{
@@ -72,20 +85,24 @@ div.radio_block{
 }
 
 div.block{
-    display: flex;
+    display: block;
 }
 
 textarea.notes{
+    display: block;
     margin-top: 10px;
-    width: 500px;
+    min-width: 500px;
     height: 300px;
+    /* overflow: visible; */
 }
+
 div.item_block button{
-    margin-top: 10px;
-    margin-left: 250px;
-    margin-bottom: 20px;
+    margin: 20px 25%;
+    overflow: visible;
+
 }
 
 div.item_block, div.block{
     margin-top: 10px;
+
 }

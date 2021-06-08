@@ -44,7 +44,7 @@
         </ol>
     </nav>
 
-
+    <div class="main">
         <h3 class="title1"> 常見問題 </h3>
         <div class="qa">
             <p class="Question">Ｑ：是否可以訂位？</p>
@@ -59,60 +59,61 @@
 
 
         <h3 class="title1">與我聯繫</h3>
-  
+    
         <form class="the_form" action="#" method="post">
 
             <div class="item_block">
                 <label>姓名：</label>
                 <input type="">
-              </div>
+            </div>
 
             <div class="item_block">
-              <label>連絡電話：</label>
-              <input type="text">
-             </div>
-  
+            <label>連絡電話：</label>
+            <input type="text">
+            </div>
+    
             <div class="item_block">
                 <label>Email：</label>
                 <input type="text">
             </div>
-    
+        
             <div class="item_block">
                 <label>希望回覆時間：</label>
                 <div class="reply_block">
-    
+        
                 <div class="radio_block">
                     <input type="radio" id="morning" name="reply_time" checked>
                     <label for="morning">上午</label>
                 </div>
-    
+        
                 <div class="radio_block">
                     <input type="radio" id="afternoon" name="reply_time">
                     <label for="afternoon">下午</label>
                 </div>
-    
+        
                 <div class="radio_block">
-                    <input type="radio" id="night" name="reply_time">
+                     <input type="radio" id="night" name="reply_time">
                     <label for="night">晚上</label>
                 </div>
-    
-                </div>
+        
+
             </div>
-    
+        
             <div class="block">
-                <label>聯繫事項：</label>
+                 <label>聯繫事項：</label>
                 <textarea class="notes"></textarea>
             </div>
-    
+        
             <div class="item_block">
                 <label></label>
                 <button type="submit" class="btn_submit">確定送出</button>
             </div>
-  
+    
         </form>
+    </div>
+
   
-      </main>
-      <footer>
+    <footer>
         <a class="footer">南門壽司股份有限公司</a>
         <a class="ig_icon" href="https://www.facebook.com.tw"><i class="fab fa-instagram fa-2x"></i></a>
         <a class="fb_icon" href="https://www.instagram.com"><i class="fab fa-facebook-square fa-2x"></i></a>
@@ -122,24 +123,24 @@
         <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</p>
         <p>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
         <p>※ [TibaMe-前端設計工程師養成班]請超連結https://www.facebook.com/webindex/ </p>
-        </footer>
+    </footer>
 
 
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
         
-        jQuery(function($){
+    jQuery(function($){
         
         $("p.Question").css({cursor:"pointer"}).click(function(){
         
-        $(this).next().toggle("normal");
+            $(this).next().toggle("normal");
         
         });
         
-        });
+    });
         
-        </script>
+    </script>
   
     
 </body>
