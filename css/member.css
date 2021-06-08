@@ -3,9 +3,9 @@
 
 
 
-* {
+/* * {
 	box-sizing: border-box;
-}
+} */
 
 body {
 	background: #f6f5f7;
@@ -15,7 +15,7 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
-	margin: -20px 0 50px;
+	margin: -50px 0 50px;
 }
 
 h3 {
@@ -83,7 +83,7 @@ input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
-	margin: 8px 0;
+	margin: 8px 0 !important;
 	width: 100%;
 }
 
@@ -260,9 +260,9 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
-header{
+/* header{
     margin-top: 313px !important;
-}
+} */
 
 
 
