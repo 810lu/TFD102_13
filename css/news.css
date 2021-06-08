@@ -24,8 +24,11 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
-div.main_container a.news{
-    display: inline-block;
+div.main_container{
+    box-sizing: border-box;
+    border: 1px solid black;
+    max-width: 1200px; 
+    margin: 20px auto;
 }
 
 div.main_container a.news img{
@@ -36,3 +39,5 @@ div.main_container a.news img{
     object-fit: cover;
     margin: 10px 5px 10px 5px;
 }
+
+div.main_container a.news img

@@ -2,8 +2,11 @@
 @import "./common/footer.css";
 
 *{
-    margin: 0;
+    box-sizing: border-box;
+}
 
+body{
+    margin: 0;
 }
 
 /* banner */
@@ -61,6 +64,8 @@ div.news div.news_1 a{
     color: black;
 }
 
+/* 社群連結 */
+
 div.img{
     display: inline-block;
 }
@@ -74,6 +79,8 @@ div.img img{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* 職人介紹 */
 
 div.introduce_photo, div.introduce{
     display: inline-block;
@@ -97,29 +104,79 @@ div.introduce{
     vertical-align: middle;
 }
 
-div.pro_info a img{
-    margin-left: 20px;
-    width: 230px;
-    height: 180px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* 產品介紹 */
+div.main_container div.intro div.pro_info ul.img_list{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+div.main_container div.intro div.pro_info ul.img_list > li{
+    /* border: 1px solid red; */
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    font-size: 1rem;
+    
+}
+  
+@media screen and (max-width: 767px){
+    div.main_container div.intro div.pro_info ul.img_list > li{
+        width: 50%;
+    }
+}
+  
+div.img_block{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+/* 100% 是寬度的 100% */
+/*   padding-top: 100%; */
+    padding-top: 100%;
+}
+
+
+div.img_block.-a{
+    background-image: url("../img/1.PNG");
+}
+div.img_block.-b{
+    background-image: url("../img/2.PNG");
+}
+div.img_block.-c{
+    background-image: url("../img/3.PNG");
+}
+div.img_block.-d{
+    background-image: url("../img/4.PNG");
+}
+
+/* 訂位 */
+
+div.booking{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: auto;
 }
 
 div.booking, button{
     font-size: 1rem;
-    margin-left: 350px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 div.item_block button{
-    margin-left: 100px;
+    margin: 0 auto;
     border: transparent;
     color: white;
     background-color: #F9BF45;
     border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 25%;
 }
 
 h3.photo{

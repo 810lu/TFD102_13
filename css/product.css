@@ -1,6 +1,11 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 
 /* 麵包屑 */
 nav.my_breadcrumb ol.breadcrumb{
@@ -23,16 +28,16 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
-body{
+
+div.menu_items{
     line-height: 1.5;
     overflow-x: hidden;
     position: relative;
     right: 0;
+    /* border: 1px solid black; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 dl, dt{
