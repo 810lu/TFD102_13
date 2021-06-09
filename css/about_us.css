@@ -25,7 +25,9 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 }
 
 div.main_container{
-    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 800px;
 }
 
 div.main_container div.intro div.photo, div.main_container div.intro div.photo img{

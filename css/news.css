@@ -27,7 +27,7 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 div.main_container{
     box-sizing: border-box;
     /* border: 1px solid black; */
-    max-width: 1200px; 
+    width: 1200px; 
     margin: 20px auto;
 }
 

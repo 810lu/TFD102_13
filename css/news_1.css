@@ -25,9 +25,9 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 }
 
 div.main_container{
-    display: inline-block;
     box-sizing: border-box;
     margin: 20px auto;
+    width: 800px;
 }
 
 div.main_container a.news img{

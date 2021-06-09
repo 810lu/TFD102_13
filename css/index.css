@@ -64,6 +64,12 @@ div.news div.news_1 a{
     color: black;
 }
 
+@media screen and (max-width: 767px){
+    div.news div.news_1{
+        width: 60%;
+    }
+}
+
 /* 社群連結 */
 
 div.img{
@@ -104,6 +110,18 @@ div.introduce{
     vertical-align: middle;
 }
 
+@media screen and (max-width: 767px){
+    div.introduce_photo img{
+        width: 70%;
+    }
+    div.introduce{
+        min-width: 250px;
+        box-sizing: border-box;
+        margin: 10px 40px;
+        /* border: 1px solid black; */
+    }
+}
+
 /* 產品介紹 */
 div.main_container div.intro div.pro_info ul.img_list{
     margin: 0;
@@ -112,7 +130,7 @@ div.main_container div.intro div.pro_info ul.img_list{
 }
 
 div.main_container div.intro div.pro_info ul.img_list > li{
-    /* border: 1px solid red; */
+    /* border: 2px solid gray; */
     display: inline-block;
     vertical-align: top;
     list-style: none;
@@ -126,6 +144,9 @@ div.main_container div.intro div.pro_info ul.img_list > li{
 @media screen and (max-width: 767px){
     div.main_container div.intro div.pro_info ul.img_list > li{
         width: 50%;
+    }
+    div.main_container div.intro div.pro_info ul.img_list > li > .img_block{
+        padding-top: 63%;
     }
 }
   
