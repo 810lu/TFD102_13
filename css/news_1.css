@@ -26,12 +26,13 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 
 div.main_container{
     display: inline-block;
+    box-sizing: border-box;
+    margin: 20px auto;
 }
 
 div.main_container a.news img{
     display: inline-block;
     box-sizing: border-box;
-    margin-left: 250px;
     width: 400px;
     height: 600px;
     object-fit: contain;
@@ -47,5 +48,4 @@ div.main_container div.info{
 div.main_container div.content{
     display: block;
     width: 80%;
-    margin-left: 100px;
 }
