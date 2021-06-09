@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+/* 麵包屑 */
+
 nav.my_breadcrumb ol.breadcrumb{
     background-color: #1C1C1C;
     width: 80%;
@@ -25,18 +27,94 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 }
 
 div.main_container{
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-    width: 1200px; 
-    margin: 20px auto;
+    width: 1000px; 
+    margin: 30px 10%;
 }
 
-div.main_container a.news img{
+@media (max-width: 767px){
+    .main_container{
+        width: 100%;
+        margin: 0 auto;
+    }
+} 
+
+/* 整體區塊 */
+.grid_item{
     display: inline-block;
-    box-sizing: border-box;
+}
+
+@media (max-width: 767px){
+    .grid_item{
+        width: 100%;
+        margin: 0 auto;
+    }
+} 
+
+@media (max-width: 575px){
+    .grid_item{
+        width: 100%;
+        margin: 0 auto;
+    }
+} 
+
+
+/* 單一區塊 */
+.grid_item .photo{
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.grid_item .photo a img{
     width: 300px;
     height: 500px;
     object-fit: cover;
-    margin: 10px 5px 10px 5px;
 }
+
+.grid_item .photo .cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(85, 80, 80, 0.327);
+    display: none;
+}
+
+.grid_item .photo a:hover .cover{
+    display: flex;
+}
+
+.grid_item .photo a .cover h4{
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem 0 1rem;
+}
+
+
+
+.grid_item .photo a .cover p{
+    color: white;
+    font-size: 1rem;
+    margin: 0 1rem 0 1rem;
+    text-decoration: none;
+}
+
+.grid_item .photo a .cover p
+
+.photo a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.photo a .photo-info{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: none;
+}
+
 

@@ -24,10 +24,13 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
+/* 內容 */
+
 div.main_container{
     box-sizing: border-box;
     margin: 0 auto;
-    width: 800px;
+    width: 900px;
+    border: 1px solid black;
 }
 
 div.main_container div.intro div.photo, div.main_container div.intro div.photo img{
