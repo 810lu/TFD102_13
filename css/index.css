@@ -152,7 +152,7 @@ div.main_container div.intro div.pro_info ul.img_list > li{
   
 div.img_block{
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 95%;
     background-position: center;
     
 /* 100% 是寬度的 100% */
