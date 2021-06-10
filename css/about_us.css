@@ -40,7 +40,12 @@ div.main_container{
     gap: 2rem;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 375px) {
+    div.main_container{
+        margin: 0 10px;
+        width: 90%;
+    }
+
     .intro{
         display: grid;
         grid-template-areas: "first" "second" "fourth" "third";

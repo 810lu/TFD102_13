@@ -32,6 +32,22 @@ div.main{
     width: 100%;
 }
 
+@media screen and (max-width: 575px) {
+    div.main{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form.the_form{
+    width: 100%;
+    }
+
+    textarea.notes{
+        width: 300px;
+    }
+
+}
+
 h3{
     margin-top: 20px;
     text-align: center;
@@ -91,9 +107,8 @@ div.block{
 textarea.notes{
     display: block;
     margin-top: 10px;
-    min-width: 500px;
+    width: 400px;
     height: 300px;
-    /* overflow: visible; */
 }
 
 div.item_block button{
