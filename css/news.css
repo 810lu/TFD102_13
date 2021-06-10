@@ -118,3 +118,14 @@ div.main_container{
 }
 
 
+.topic{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pic{
+    width: 30px;
+    height: 30px;
+}
