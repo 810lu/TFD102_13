@@ -17,5 +17,6 @@ footer a.ig_icon i.fab, footer a.fb_icon i.fab{
 a.footer{
     color: white !important;
     text-decoration: none !important;
+    width: 100% !important;
 
 }
