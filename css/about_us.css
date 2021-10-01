@@ -7,7 +7,8 @@
 
 nav.my_breadcrumb ol.breadcrumb{
     background-color: #1C1C1C;
-    width: 80%;
+    width: 100%;
+    max-width: 1000px;    
     margin: 0 auto 10px;
 }
   
@@ -28,8 +29,9 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 
 div.main_container{
     box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    max-width: 900px;
     /* border: 1px solid black; */
 }
 
@@ -42,8 +44,8 @@ div.main_container{
 
 @media screen and (max-width: 375px) {
     div.main_container{
-        margin: 0 10px;
         width: 90%;
+        margin: 0 auto;
     }
 
     .intro{
@@ -54,31 +56,36 @@ div.main_container{
 }
 
 div.photo1{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     grid-area: first;
 }
 
 div.info1{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     grid-area: second;
 }
 
 div.photo2{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     grid-area: fourth;
 }
 
 div.info2{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     grid-area: third;
 }
 
 div.photo1 img, div.photo2 img{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     object-fit: contain;
 

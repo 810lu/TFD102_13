@@ -1,50 +1,51 @@
 *{
-    /* margin: 0; */
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-header.header{
-
+.header{
+    display: flex;
     width: 100%;
-    min-height: 100px;
+    max-width: 1000px;
     text-align: center;
     font-size: 0;
     margin: 0 auto;
     background-color: white;
-
-
 }
 
-header.header div.logo a.logo img{
-    display: inline-block;
-    box-sizing: border-box;
-    margin: 0 50px;
-    width: 80%;
-
+.header .logo img{
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
 }
 
-header.header div.logo, header.header nav.nav, header.header nav.nav ul, header.header nav.nav ul li{
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+
+.header .guide{
+    display: flex;
+    width: calc(100% - 400px);
+    height: 100px;
+}
+@media screen and (max-width: 900px){
+    .guide{
+        display: none !important;
+    }
 }
 
-header.header  nav.nav ul{
-    margin-left: 100px;
+.header .logo, .header .guide, .header .guide ul, .header .guide ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-header.header  nav.nav ul li a{
-    display: inline-block;
-    box-sizing: border-box;
+.header .guide ul li a{
+    display: flex;
     padding: 0;
     font-size: 1.2rem;
     text-decoration: none;
     color: black;
-    vertical-align: bottom;    
-    margin-left: 20px;
+    margin: 0 6px 0 6px;
 }
 
-header.header  nav.nav ul li a:hover{
+.header .guide ul li a:hover{
     font-size: 1.4rem;
     color: #78552B;
     }

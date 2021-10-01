@@ -9,7 +9,8 @@
 
 nav.my_breadcrumb ol.breadcrumb{
     background-color: #1C1C1C;
-    width: 80%;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto 10px;
 }
   
@@ -26,48 +27,51 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
-div.main_container{
-    width: 1000px; 
-    margin: 30px 10%;
-}
-
 @media (max-width: 767px){
     .main_container{
         width: 100%;
         margin: 0 auto;
     }
 } 
+@media (max-width: 565px){
+    .main_container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+} 
 
 /* 整體區塊 */
-.grid_item{
-    display: inline-block;
+.main_container{
+width: 100%;
+max-width: 1000px;
+display: flex;
+flex-direction: row;
+margin: 30px auto;
 }
 
-@media (max-width: 767px){
-    .grid_item{
-        width: 100%;
-        margin: 0 auto;
-    }
-} 
+.grid_item{
+    display: flex;
+    flex-direction: row;
+}
 
-@media (max-width: 575px){
-    .grid_item{
-        width: 100%;
-        margin: 0 auto;
-    }
-} 
 
 
 /* 單一區塊 */
 .grid_item .photo{
-    width: 300px;
+    display: flex;
+    width: 100%;
+    max-width: 300px;
     height: 500px;
-    /* border: 1px solid black; */
     position: relative;
+    margin: 0 10px;
 }
 
 .grid_item .photo a img{
-    width: 300px;
+    display: flex;
+    width: 100%;
+    max-width: 300px;
     height: 500px;
     object-fit: cover;
 }
@@ -129,3 +133,23 @@ div.main_container{
     width: 30px;
     height: 30px;
 }
+
+@media (max-width: 575px){
+    .main_container{
+        flex-direction: column;
+    }
+
+    .grid_item{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .grid_item .photo{
+        max-width: 330px;
+        margin: 10px auto;
+    }
+
+    .grid_item .photo a img{
+        max-width: 330px;
+    }
+} 

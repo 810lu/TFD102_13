@@ -19,7 +19,8 @@ body {
 
 h3 {
 	margin: 0;
-	text-align: center
+	text-align: center;
+	white-space: nowrap;
 }
 
 
@@ -48,10 +49,11 @@ button {
 	background-color: #78552B;
 	color: #FFFFFF;
 	font-size: 1rem;
-	padding: 12px 45px;
+	padding: 12px 30px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+	white-space: nowrap;
 }
 
 button:active {
@@ -96,6 +98,7 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	z-index: 0;
 }
 
 .form-container {
@@ -209,6 +212,7 @@ input {
 }
 
 .social-container {
+	display: flex;
 	margin: 20px 0;
 }
 
@@ -259,9 +263,15 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
     color: white;
 }
 
-/* header{
-    margin-top: 313px !important;
-} */
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1000px !important; 
+}
 
+@media (max-width: 575px){
+	.social-container{
+		display: flex;
+		margin: 0;
+	}
 
-
+}

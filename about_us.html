@@ -6,6 +6,7 @@
     <title>南門壽司官網-關於我們</title>
     <link rel="icon" href="./img/logo_s.png">
     <link rel="stylesheet" href="./css/about_us.css">
+    <link rel="stylesheet" href="./css/common/hamburger_menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/be0a133c34.js" crossorigin="anonymous"></script>
@@ -15,18 +16,18 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a class="logo"  href="./index.html">
+            <a href="./index.html" class="logo_icon">
                 <img src="./img/logo2.png">
             </a>
         </div>
-        <nav class="nav">
+        <div class="guide">
             <ul>
                 <li>
                     <a class="about us" href="./about_us.html">關於我們</a>
                 </li>                           
                 <li>
                     <a class="news" href="./news.html">最新消息</a>
-                 </li>
+                </li>
                 <li>
                     <a class="product" href="./product.html">產品介紹</a>
                 </li>
@@ -37,8 +38,51 @@
                     <a class="member" href="./member.html">會員專區</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+
+
     </header>
+    <nav role="navigation" class="ham_rwd">
+        <div id="mobile-nav">
+    
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="mobile-nav__menu">
+                <li class="mobile-menu__item">
+                    <a href="./about_us.html" class="mobile-menu__item__link" style="color:#F9BF45;">
+                        關於我們
+                    </a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="./news.html" class="mobile-menu__item__link" style="color:#F9BF45 ;">
+                        最新消息
+                    </a>
+                </li>
+    
+                <li class="mobile-menu__item">
+                    <a href="./product.html" class="mobile-menu__item__link" style="color:#F9BF45;">
+                        產品介紹
+                    </a>
+                </li>
+    
+                <li class="mobile-menu__item">
+                    <a href="./contact_us.html" class="mobile-menu__item__link" style="color:#F9BF45;">
+                        聯絡我們
+                    </a>
+                </li>
+    
+                <li class="mobile-menu__item">
+                    <a href="./member.html" class="mobile-menu__item__link" style="color:#F9BF45;">
+                        會員專區
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>  
+  
     <nav aria-label="breadcrumb" class="my_breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
