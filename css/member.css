@@ -264,8 +264,9 @@ nav.my_breadcrumb ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before{
 }
 
 @media (min-width: 1200px){
-.container, .container-lg, .container-md, .container-sm, .container-xl {
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1000px !important; 
+	}
 }
 
 @media (max-width: 575px){
